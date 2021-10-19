@@ -5,6 +5,8 @@ plugins {
 android {
     compileSdk 31
 
+    apply plugin: "androidx.navigation.safeargs"
+
     defaultConfig {
         applicationId "com.example.comprasapp"
         minSdk 23

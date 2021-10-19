@@ -1,12 +1,17 @@
 package com.example.comprasapp.model;
 
 
+import androidx.room.Entity;
 import androidx.room.Ignore;
+import androidx.room.PrimaryKey;
 
 import java.util.Date;
+//LocalDate
 
+@Entity(tableName = "compras")
 public class Compra {
 
+    @PrimaryKey(autoGenerate = true)
     private int id;
 
     private String nombre;
