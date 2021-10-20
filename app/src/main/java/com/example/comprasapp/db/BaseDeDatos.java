@@ -16,7 +16,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 @Database(entities = Compra.class, version = 1, exportSchema = false)
-@TypeConverters(Converters.class)
+@TypeConverters({Converters.class})
 public abstract class BaseDeDatos extends RoomDatabase {
 
     private static volatile  BaseDeDatos instance;
@@ -40,9 +40,8 @@ public abstract class BaseDeDatos extends RoomDatabase {
                             context.getApplicationContext(),
                             BaseDeDatos.class,
                             DB_NAME
-                    )
-                            .fallbackToDestructiveMigration()
-                            .addTypeConverter(Converters.class)
+                    )       .fallbackToDestructiveMigration()
+                            //.addTypeConverter(Converters.class)
                             .build();
                 }
             }

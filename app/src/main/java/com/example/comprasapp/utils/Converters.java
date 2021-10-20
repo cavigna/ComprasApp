@@ -1,9 +1,12 @@
 package com.example.comprasapp.utils;
 
+import androidx.room.ProvidedTypeConverter;
 import androidx.room.TypeConverter;
+import androidx.room.TypeConverters;
 
 import java.util.Date;
 
+@ProvidedTypeConverter
 public class Converters {
     @TypeConverter
     public static Date fromTimestamp(Long value) {
