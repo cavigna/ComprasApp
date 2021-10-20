@@ -89,7 +89,7 @@ public class AddFragment extends Fragment {
             }else{
                 if(nombre.isEmpty()) tilnombre.setError("Debe Ingresar un Nombre");
                 if(precioS.isEmpty()) tilCantidad.setError("Debe Ingresar un Precio");
-                if(cantidadS.isEmpty()) tilCantidad.setError("Debe Ingresar un Precio");
+                if(cantidadS.isEmpty()) tilCantidad.setError("Debe Ingresar un Cantidad");
             }
 
 

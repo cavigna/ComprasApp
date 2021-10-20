@@ -47,13 +47,13 @@ public class ComprasViewHolder extends RecyclerView.ViewHolder {
         int cantidad = compra.getCantidad();
         int total = compra.getTotal();
         Date fecha = compra.getFecha();
-        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MMMM-yyyy");
 
         tvNombre.setText(nombre);
         tvPrecio.setText(String.valueOf(precio));
         tvCantidad.setText(String.valueOf(cantidad));
         tvTotal.setText(String.valueOf(total));
-        tvFecha.setText(sdf.format(fecha).toString());
+        tvFecha.setText(sdf.format(fecha));
 
     }
 }
