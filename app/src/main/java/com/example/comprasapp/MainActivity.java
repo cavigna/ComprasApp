@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void irFb(FloatingActionButton floatingActionButton){
         fb.setOnClickListener(view -> {
-            navController.navigate(R.id.action_homeFragment_to_addFragment);
+            navController.navigate(R.id.addFragment);
         });
     }
 }

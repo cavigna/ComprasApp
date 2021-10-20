@@ -3,12 +3,16 @@ package com.example.comprasapp.adapter;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.lifecycle.ViewModel;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 
 import com.example.comprasapp.model.Compra;
+import com.example.comprasapp.viewmodel.ComprasViewModel;
 
 public class ComprasListAdapter extends ListAdapter<Compra, ComprasViewHolder> {
+    //private ComprasViewModel viewModel;
+
     public ComprasListAdapter(@NonNull DiffUtil.ItemCallback<Compra> diffCallback) {
         super(diffCallback);
     }
